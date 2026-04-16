@@ -1,22 +1,26 @@
-export enum ProductCategory {
-  PRODUCE = 'produce',
-  BAKERY = 'bakery',
-  MEAT = 'meat',
-  DAIRY = 'dairy',
-  BEVERAGES = 'beverages',
-  SNACKS = 'snacks',
-  PANTRY = 'pantry'
-}
+export const ProductCategory = {
+  PRODUCE: 'produce',
+  BAKERY: 'bakery',
+  MEAT: 'meat',
+  DAIRY: 'dairy',
+  BEVERAGES: 'beverages',
+  SNACKS: 'snacks',
+  PANTRY: 'pantry'
+} as const;
 
-export enum OrderStatus {
-  PENDING = 'pending',
-  CONFIRMED = 'confirmed',
-  PREPARING = 'preparing',
-  OUT_FOR_DELIVERY = 'out_for_delivery',
-  DELIVERED = 'delivered',
-  FAILED = 'failed',
-  CANCELLED = 'cancelled'
-}
+export type ProductCategory = typeof ProductCategory[keyof typeof ProductCategory];
+
+export const OrderStatus = {
+  PENDING: 'pending',
+  CONFIRMED: 'confirmed',
+  PREPARING: 'preparing',
+  OUT_FOR_DELIVERY: 'out_for_delivery',
+  DELIVERED: 'delivered',
+  FAILED: 'failed',
+  CANCELLED: 'cancelled'
+} as const;
+
+export type OrderStatus = typeof OrderStatus[keyof typeof OrderStatus];
 
 export interface Location {
   id: string;

@@ -4,7 +4,7 @@ import { useCartStore } from '../../store/cartStore';
 import { CheckoutSheet } from './CheckoutSheet';
 
 export function Cart() {
-  const { items, removeItem, updateQuantity, getTotalPrice } = useCartStore();
+  const { items, removeItem, updateQuantity, getTotal } = useCartStore();
   const [isCheckoutOpen, setIsCheckoutOpen] = useState(false);
 
   return (
@@ -68,7 +68,7 @@ export function Cart() {
           >
             <span>Go to Checkout</span>
             <div className="absolute right-4 bg-[#489E67] px-2 py-1 rounded text-sm tracking-wide">
-              ${getTotalPrice().toFixed(2)}
+              ${getTotal().toFixed(2)}
             </div>
           </button>
         </div>
@@ -77,7 +77,7 @@ export function Cart() {
       <CheckoutSheet 
         isOpen={isCheckoutOpen} 
         onClose={() => setIsCheckoutOpen(false)} 
-        total={getTotalPrice()} 
+        total={getTotal()} 
       />
     </div>
   );

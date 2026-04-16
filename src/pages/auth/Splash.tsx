@@ -11,12 +11,12 @@ export function Splash() {
   }, [navigate]);
 
   return (
-    <div className="flex flex-col items-center justify-center h-[100dvh] bg-primary text-white w-full">
+    <div className="flex flex-col items-center justify-center h-screen bg-primary text-white w-full">
       <div className="flex items-center gap-4 animate-pulse">
-        <Carrot size={56} className="text-white" strokeWidth={1.5} />
+        <Carrot size={56} className="text-white md:w-24 md:h-24" strokeWidth={1.5} />
         <div className="flex flex-col">
-          <h1 className="text-6xl font-bold tracking-tight">nectar</h1>
-          <span className="text-sm tracking-[0.25em] font-medium opacity-90 mt-1">online groceriet</span>
+          <h1 className="text-6xl md:text-8xl font-bold tracking-tight">Groc</h1>
+          <span className="text-sm md:text-lg tracking-[0.25em] font-medium opacity-90 mt-1 md:mt-2">Online Groceriet</span>
         </div>
       </div>
     </div>

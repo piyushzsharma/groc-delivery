@@ -10,10 +10,10 @@ export function DesktopSidebar() {
     <aside className="hidden md:flex flex-col w-64 border-r border-gray-200 bg-white h-screen sticky top-0 overflow-y-auto">
       <div className="p-6">
         <h1 className="text-2xl font-bold flex items-center gap-2 text-primary tracking-tight">
-          nectar
+          Groc
         </h1>
       </div>
-      
+
       <nav className="flex-1 px-4 space-y-1 mt-4">
         <NavLink to="/home" className={({ isActive }) => `flex items-center gap-3 px-4 py-3 rounded-xl transition-colors font-medium ${isActive ? 'bg-primary/10 text-primary' : 'text-gray-600 hover:bg-gray-50 hover:text-gray-900'}`}>
           <Home size={22} /> Home

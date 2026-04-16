@@ -7,7 +7,7 @@ export function ProductDetails() {
   const { id } = useParams();
   const navigate = useNavigate();
   const addItem = useCartStore(state => state.addItem);
-  
+
   const product = mockProducts.find(p => p.id === id) || mockProducts[0];
 
   return (
@@ -30,11 +30,11 @@ export function ProductDetails() {
         <div className="flex justify-between items-center mb-8">
           <div className="flex items-center gap-4">
             <button className="w-11 h-11 rounded-[14px] flex items-center justify-center border text-gray-400">
-               <Minus size={24} strokeWidth={2.5} />
+              <Minus size={24} strokeWidth={2.5} />
             </button>
             <span className="text-[19px] font-semibold w-6 text-center">1</span>
             <button className="w-11 h-11 rounded-[14px] flex items-center justify-center border border-gray-200 text-primary">
-               <Plus size={24} strokeWidth={2.5} />
+              <Plus size={24} strokeWidth={2.5} />
             </button>
           </div>
           <span className="text-[26px] font-bold text-gray-900 tracking-tight">${product.price.toFixed(2)}</span>
@@ -42,35 +42,35 @@ export function ProductDetails() {
 
         <div className="border-t border-gray-200 py-4 flex flex-col gap-2">
           <div className="flex justify-between items-center cursor-pointer mb-2">
-             <h3 className="text-[17px] font-semibold text-gray-900">Product Detail</h3>
-             <ChevronDown size={24} />
+            <h3 className="text-[17px] font-semibold text-gray-900">Product Detail</h3>
+            <ChevronDown size={24} />
           </div>
           <p className="text-[15px] leading-relaxed text-gray-500 mb-2">{product.description}</p>
         </div>
 
         <div className="border-t border-gray-200 py-4 cursor-pointer flex justify-between items-center">
-           <h3 className="text-[17px] font-semibold text-gray-900">Nutritions</h3>
-           <div className="flex items-center gap-3">
-             <span className="bg-gray-200 text-gray-600 text-[10px] px-2 py-1 rounded font-semibold uppercase">100gr</span>
-             <ChevronRight size={24} />
-           </div>
+          <h3 className="text-[17px] font-semibold text-gray-900">Nutritions</h3>
+          <div className="flex items-center gap-3">
+            <span className="bg-gray-200 text-gray-600 text-[10px] px-2 py-1 rounded font-semibold uppercase">100g</span>
+            <ChevronRight size={24} />
+          </div>
         </div>
 
         <div className="border-t border-b border-gray-200 py-4 cursor-pointer flex justify-between items-center mb-10">
-           <h3 className="text-[17px] font-semibold text-gray-900">Review</h3>
-           <div className="flex items-center gap-3">
-             <div className="flex text-orange-500 gap-1">
-               <span className="text-lg leading-none">★</span>
-               <span className="text-lg leading-none">★</span>
-               <span className="text-lg leading-none">★</span>
-               <span className="text-lg leading-none">★</span>
-               <span className="text-lg leading-none">★</span>
-             </div>
-             <ChevronRight size={24} />
-           </div>
+          <h3 className="text-[17px] font-semibold text-gray-900">Review</h3>
+          <div className="flex items-center gap-3">
+            <div className="flex text-orange-500 gap-1">
+              <span className="text-lg leading-none">★</span>
+              <span className="text-lg leading-none">★</span>
+              <span className="text-lg leading-none">★</span>
+              <span className="text-lg leading-none">★</span>
+              <span className="text-lg leading-none">★</span>
+            </div>
+            <ChevronRight size={24} />
+          </div>
         </div>
 
-        <button 
+        <button
           onClick={() => addItem(product, 1)}
           className="w-full bg-primary hover:bg-primary-dark transition-colors text-white font-semibold py-5 rounded-2xl text-[19px]"
         >

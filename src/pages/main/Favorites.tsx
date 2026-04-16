@@ -13,7 +13,7 @@ export function Favorites() {
   return (
     <div className="flex flex-col h-[100dvh] bg-white pt-10 relative">
       <div className="flex justify-center border-b border-gray-200 pb-5 mb-2">
-        <h1 className="text-xl font-bold text-gray-900">Favorurite</h1>
+        <h1 className="text-xl font-bold text-gray-900">Favorites</h1>
       </div>
 
       <div className="flex flex-col flex-1 overflow-y-auto pb-24 px-5">
@@ -35,7 +35,7 @@ export function Favorites() {
       </div>
 
       <div className="absolute bottom-20 md:bottom-6 left-5 right-5">
-        <button 
+        <button
           onClick={addAllToCart}
           className="w-full bg-primary hover:bg-primary-dark transition-colors text-white font-semibold py-5 rounded-2xl text-[19px]"
         >

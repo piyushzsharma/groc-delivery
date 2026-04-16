@@ -20,7 +20,7 @@ export const mockProducts: Product[] = [
     imageUrl: 'https://images.unsplash.com/photo-1528825871115-3581a5387919?w=400&q=80',
     isAvailable: true,
     stockCount: 100,
-    unit: '7pcs, Priceg'
+    unit: '7pcs, Price'
   },
   {
     id: '2',
@@ -31,7 +31,7 @@ export const mockProducts: Product[] = [
     imageUrl: 'https://images.unsplash.com/photo-1570913149827-d2ac84ab3f9a?w=400&q=80',
     isAvailable: true,
     stockCount: 50,
-    unit: '1kg, Priceg'
+    unit: '1kg, Price'
   },
   {
     id: '3',
@@ -39,10 +39,10 @@ export const mockProducts: Product[] = [
     description: 'Fresh red bell pepper',
     price: 4.99,
     category: ProductCategory.PRODUCE,
-    imageUrl: 'https://images.unsplash.com/photo-1582515073490-39981397c445?w=400&q=80',
+    imageUrl: 'https://pushtiorganics.com/cdn/shop/files/RedBellpeppers.webp?v=1709276547',
     isAvailable: true,
     stockCount: 50,
-    unit: '1kg, Priceg'
+    unit: '1kg, Price'
   },
   {
     id: '4',
@@ -50,10 +50,10 @@ export const mockProducts: Product[] = [
     description: 'Fresh organic ginger',
     price: 4.99,
     category: ProductCategory.PRODUCE,
-    imageUrl: 'https://images.unsplash.com/photo-1615486171507-fb2be544fd7a?w=400&q=80',
+    imageUrl: 'https://organicmandya.com/cdn/shop/files/Ginger.jpg?v=1757079802&width=1000',
     isAvailable: true,
     stockCount: 50,
-    unit: '250gm, Priceg'
+    unit: '250gm, Price'
   },
   {
     id: '5',
@@ -64,7 +64,7 @@ export const mockProducts: Product[] = [
     imageUrl: 'https://images.unsplash.com/photo-1607532941433-304659e8198a?q=80&w=400&auto=format&fit=crop',
     isAvailable: true,
     stockCount: 50,
-    unit: '1kg, Priceg'
+    unit: '1kg, Price'
   },
   {
     id: '6',
@@ -75,7 +75,7 @@ export const mockProducts: Product[] = [
     imageUrl: 'https://images.unsplash.com/photo-1587593810167-a84920ea0781?q=80&w=400&auto=format&fit=crop',
     isAvailable: true,
     stockCount: 50,
-    unit: '1kg, Priceg'
+    unit: '1kg, Price'
   },
   {
     id: '7',
