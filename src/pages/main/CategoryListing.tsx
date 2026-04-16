@@ -1,5 +1,5 @@
 import { useNavigate, useParams } from 'react-router-dom';
-import { ChevronLeft, SlidersHorizontal, Plus } from 'lucide-react';
+import { ChevronLeft, SlidersHorizontal } from 'lucide-react';
 import { mockCategories, mockProducts } from '../../utils/mockData';
 import { ProductCard } from '../../components/ProductCard';
 

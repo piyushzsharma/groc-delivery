@@ -21,7 +21,7 @@ export function Search() {
       </div>
 
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pb-8">
-        {mockCategories.map((cat, i) => (
+        {mockCategories.map((cat) => (
           <div 
             key={cat.id}
             onClick={() => navigate(`/category/${cat.id}`)}

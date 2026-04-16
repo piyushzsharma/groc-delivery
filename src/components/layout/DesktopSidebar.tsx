@@ -1,5 +1,5 @@
-import { Outlet, NavLink } from 'react-router-dom';
-import { Home, Search, ShoppingCart, Heart, LogOut } from 'lucide-react';
+import { NavLink } from 'react-router-dom';
+import { Home, Search, Heart, LogOut } from 'lucide-react';
 import { mockCategories } from '../../utils/mockData';
 import { useAuthStore } from '../../store/authStore';
 
