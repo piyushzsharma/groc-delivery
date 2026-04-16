@@ -1,8 +1,8 @@
 # Groc - Grocery Delivery Web App
 
-[![Deploy to Vercel](https://vercelbadge.vercel.app/api/piyushzsharma/groc-delivery)](https://groc-delivery.vercel.app)
+[![Deploy to Vercel](https://vercelbadge.vercel.app/api/piyushzsharma/groc-delivery)](https://groc-delivery.vercel.app/)
 
-**Live Demo:** [https://groc-delivery.vercel.app](https://groc-delivery.vercel.app)
+**Live Demo:** [https://groc-delivery.vercel.app/](https://groc-delivery.vercel.app/)
 
 A modern, highly responsive React web application that simulates a complete grocery shopping and delivery experience. Built comprehensively from high-fidelity Figma designs, this project features robust global state management, strict TypeScript adherence, and fluid mobile-first layouts that scale beautifully seamlessly onto desktop screens.
 
